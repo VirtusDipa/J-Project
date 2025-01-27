@@ -1,0 +1,272 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Juventus Fans Bold";
+  src: url("./font/Juventus-Fans-Bold-1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3b3b3b;
+  padding: 15px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  height: 70px;
+}
+
+#logo {
+  margin-left: 30px;
+  margin-right: 40px;
+  width: 40px;
+}
+
+#jfc {
+  font-family: "Juventus Fans Bold", sans-serif;
+  font-size: 40px;
+  color: #ececec;
+  margin-right: 10px;
+}
+
+#uan {
+  font-family: "Juventus Fans Bold", sans-serif;
+  font-size: 20px;
+  color: #ececec;
+  margin-bottom: 1px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+}
+
+ul li {
+  margin-left: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ececec;
+  font-family: "Juventus Fans Bold", sans-serif;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #fdb913;
+}
+
+#video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: black;/
+}
+
+
+#logo-image {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 450px;
+}
+#app {
+  font-family: juventus fans bold;
+  font-size: 90px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#scarica {
+  font-family: juventus fans bold;
+  font-size: 28 px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 38%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 450px;
+}
+
+#content {
+  margin-top: 70px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#j,
+#news,
+#history,
+#team,
+#calendar {
+  background-color: #3b3b3b;
+  margin: auto;
+  width: 80%;
+  border-radius: 15px;
+  color: #ececec;
+  font-family: "Juventus Fans Bold";
+  font-size: 50px;
+  text-align: center;
+  height: 180px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.6s ease;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#j:hover,
+#news:hover,
+#history:hover,
+#team:hover,
+#calendar:hover {
+  background-color: #555555;
+  text-align: center;
+  height: 400px;
+  width: 90%;
+  cursor: pointer;
+  color: #fdb913;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+#copiright {
+  color: #3b3b3b;
+  font-family: "Juventus Fans Bold";
+  font-size: 20px;
+  text-align: center;
+}
+/* From Uiverse.io by vinodjangid07 */
+.appstore-button {
+  position: absolute;
+  top: 60%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border: 3px solid rgb(189, 189, 189);
+  background-color: rgb(15, 15, 15);
+  border-radius: 15px;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 20px 10px rgb(0, 5, 5);
+}
+
+.appstore-button svg {
+  width: 45px;
+}
+.appstore-button svg path {
+  fill: white;
+  transition: all 0.3s;
+}
+.button-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s;
+}
+.top-text {
+  font-size: 13px;
+  font-weight: 600;
+}
+.bottom-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.appstore-button:hover {
+  background-color: rgb(15, 15, 15);
+  border: 3px solid rgb(138, 138, 138);
+  box-shadow: 0px 0px 20px 5px #fdbb139a;
+}
+.appstore-button:hover .button-text {
+  color: #fdb913;
+}
+.appstore-button:hover svg path {
+  fill: #fdb913;
+}
+.playstore-button {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  border: 3px solid rgb(189, 189, 189);
+  background-color: rgb(15, 15, 15);
+  border-radius: 15px;
+  gap: 5px; 
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 20px 10px rgb(0, 5, 5);
+  z-index: 5;
+  width: 180px;
+  height: 50px;
+
+}
+
+.playstore-button:hover {
+  color: #fdbb13;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.text-2 {
+  font-weight: 1000;
+}
